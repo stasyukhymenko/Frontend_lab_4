@@ -1,5 +1,5 @@
 const variantNumber = 98;
-const targetIndex = (variantNumber % 10) + 1;
+const calculatedVariant = (variantNumber % 10) + 1;
 
 const firstElement = document.getElementById('firstElement');
 const secondElement = document.querySelector('#secondElement');
@@ -62,10 +62,10 @@ function increaseImage() {
 function decreaseImage() {
     const images = document.querySelectorAll("img");
     images.forEach(img => {
-        const currentWidth = parseInt(img.style.width) || img.width;
-        const currentHeight = parseInt(img.style.height) || img.height;
-        img.style.width = (currentWidth - 25) + 'px';
-        img.style.height = (currentHeight - 25) + 'px';
+        const setWidth = parseInt(img.style.width) || img.width;
+        const setHeight = parseInt(img.style.height) || img.height;
+        img.style.width = (setWidth - 25) + 'px';
+        img.style.height = (setHeight - 25) + 'px';
     });
 }
 
