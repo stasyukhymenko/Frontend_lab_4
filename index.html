@@ -6,17 +6,16 @@
     <meta name="description" content="personal page">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Юхименко С.Р. ІМ-23</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h2>Юхименко Станіслав Романович</h2>
     
     <p>26.04.2005, м. Гадяч, Полт. обл.</p>
-    
     <p>Гадяцький профільний ліцей імені Є.П. Кочергіна Полтавської обласної ради</p>
     <p>НТУУ "КПІ", м. Київ</p>
     
     <p>Хобі:</p>
-
     <ul>
         <li>Футбол</li>
         <li>Комп'ютерні ігри</li>
@@ -25,7 +24,6 @@
     </ul>
 
     <p>Улюблені фільми:</p>
-
     <ol>
         <li>"Той, хто біжить по лезу 2049", 2017</li>
         <li>"Форрест Гамп", 1994</li>
@@ -36,6 +34,17 @@
         Одеса — це одне з найяскравіших і найхаризматичніших міст України, яке розташоване на березі Чорного моря. Місто має унікальну атмосферу завдяки поєднанню багатої історії, культурної різноманітності та неповторного гумору, яким славляться одесити.
     </p>
 
-    <a href="https://omr.gov.ua/"> <img src="https://bessarabiainform.com/wp-content/uploads/2024/07/6390f6b6b137e.jpeg" alt="Photo of Odesa"> </a>
+    <a href="https://omr.gov.ua/">
+        <img id="odesaImage" src="https://bessarabiainform.com/wp-content/uploads/2024/07/6390f6b6b137e.jpeg" alt="Photo of Odesa" width="720" height="450">
+    </a>
+
+    <div class="image-buttons">
+        <button onclick="addImage()">Додати</button>
+        <button onclick="increaseImage()">Збільшити</button>
+        <button onclick="decreaseImage()">Зменшити</button>
+        <button onclick="deleteImage()">Видалити</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
