@@ -1,5 +1,5 @@
-const variantNumber = 98;
-const calculatedVariant = (variantNumber % 10) + 1;
+//Variant 98;
+//(Variant % 10) + 1 = 8;
 
 const firstElement = document.getElementById('firstElement');
 const secondElement = document.querySelector('#secondElement');
