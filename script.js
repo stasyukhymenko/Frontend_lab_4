@@ -10,7 +10,7 @@ firstElement.addEventListener('click', function (e) {
     if (isFirstClicked){
         isFirstClicked = false;
         firstElement.style.backgroundColor = 'lightblue';
-        firstElement.style.color = 'black';
+        firstElement.style.color = 'yellow';
     }
     else
         swapColors(firstElement,secondElement);
